@@ -1,0 +1,14 @@
+{
+  "name": "com.utes.py.ml",
+  "version": "1.0.0",
+  "description": "test env for python and nodejs",
+  "main": "com.utes.py.js/com.utes.py.js.getNeuralNetApp.js",
+  "scripts": {
+    "start": "nodemon "
+  },
+  "author": "Ajeet",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-tools": "^11.29.0"
+  }
+}

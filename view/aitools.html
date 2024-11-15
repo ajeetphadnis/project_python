@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AI Dev for Environmental Tools</title>
+    <link rel="stylesheet" href="python_apps/com.utes.py.ml/public/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <!--script src="https://example.com/fontawesome/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="fa-3x">
+		<!--i class="fas fa-stroopwafel fa-spin"></i-->
+		<i class="fab fa-slack fa-spin"></i>
+	  </div>
+	  <div class="text">
+        <h1>UTES.io</h1>
+      </div>
+	  <div class="logo" align="left">
+		<a href="#" >AI Carbon Tools Lab</a> 
+	  </div>
+      <ul id="ulmain"  onclick="getMyId();">
+	  	<li  id="MLHome"><a class="active" href="#"><i class="fa fa-fw fa-home" id="hom"></i> MLHome</a></li>
+		<li  id="Solutions"><a href="#"><i class="fa fa-life-ring" aria-hidden="true"></i> ML Solutions</a></li>
+        <li  id="CyberSecurity"><a href="#"><i class="fa fa-fw fa-shield" id="abo"></i> CyberSecurity </a></li>
+        <li  id="Software"><a href="#"><i class="fa fa-fw fa-gears" id="sol"></i> Security Solutions</a></li>
+		<li  id="Contact"><a href="#"><i class="fa fa-fw fa-envelope" id="con"></i> Contact</a></li>
+		<li  id="Login"><a href="#"><i class="fa fa-fw fa-user" id="lin"></i> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+  
+		var divs = ["sMLHome", "sCyberSecurity", "sSolutions", "sSoftware", "sContact", "sLogin"];
+		
+		function getEventTarget(e) {
+			e = e || window.event;
+			//return e.target || e.srcElement.id; 
+			return e.target || e.srcElement.id; 
+		}
+		
+		
+		function getMyId() {
+			//alert("Ajeet");
+			var target = getEventTarget(event);	
+			var str1 = target.innerHTML.split('</i>');
+			//alert(str1[1]);
+			var str2 = 's'+str1[1];
+			str2=str2.trim();
+			var str3 = str2.replace(/\s+/, function(s) {
+				return s.replace(/\s/g, '');
+			});
+			//toggleVisibility(str1[1].trim());
+			myFunction(str3);
+		}
+		
+		function myFunction(id) {
+			//alert("ID:  " + id);
+		  var x = document.getElementById(id).style.display = "block";
+		  /*if (x.style.display === "none") {
+			x.style.display = "block";
+		  } else {
+			x.style.display = "none";
+		  }*/
+		  var divlen = divs.length;
+		  //alert("divs-len:  "  +  divlen);
+		  for(i = 0; i < divs.length; i++) {
+			divId = divs[i];
+			//alert("divid:  " + divId);
+;			div = document.getElementById(divId);
+			if(id != divId) {
+			  //alert("id:  " + id + " divId:  "  + divId );
+			  document.getElementById(divId).style.display = "none";
+			}
+		  }
+		}
+		  
+  </script>
+	<div id="sMLHome" >
+		<!-- The sidebar -->
+		<div class="sidebar">
+		  <a href="#intro"><i class="fa fa-fw fa-home"></i> Home AI Tools</a>
+		  <a href="#smart_ml"><i class="fa fa-snowflake-o" aria-hidden="true"></i> Machine Learning Tools</a>
+		  <a href="#footprint"><i class="fa fa-fw fa-wrench"></i> Tools And Services</a>
+		  <a href="#clients"><i class="fa fa-sun-o" aria-hidden="true"></i> Tools Details</a>
+		  <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Blogs</a>
+		</div>
+		<br><br><br><br><br><br><br>
+	  <section id="intro" name="intro" style="margin-left: 15px;"><br><br><br><br>
+		<h2>UTES.io</h2><br>
+			<h3>
+				At UTES.io (Universal Transformation Expert Services) we are commited to supports<br>
+				environmental purification efforts globally.<br><br>
+				Climate change, resulting from the emission of greenhouse gases, especially <br>
+				carbon dioxide (CO2), has become a major concern in recent years.<br>
+				Carbon capture technologies can be considered an effective strategy for <br>
+				reducing CO2 emissions. Carbon capture is broadly recognized as a range <br>
+				of processes for removing CO2 at the point source (e.g., industrial flue gas)<br>
+				or from the atmosphere through direct air capture. Once CO2 is captured, <br>
+				it can be either permanently stored (e.g., underground) or used to produce <br>
+				high-value products, such as fuels or specialty chemicals in a process known <br>
+				as carbon utilization.7,8 Carbon capture processes are being developed and <br>
+				are an immediate priority for achieving emission mitigation goals.<br>
+
+				State-of-the-art technologies for CO2 capture involve an absorption route, <br>
+				in which an absorbent agent captures CO2 from a mixed gas stream, <br>
+				followed by a thermal-stripping process, in which pure CO2 is released<br>
+				and the absorbent agent is regenerated. Most thermal-based capture <br>
+				systems use an amine, such as monoethanolamine (MEA), diethanolamine <br>
+				(DEA), or methyldiethanolamine (MDEA), although other absorbents, <br>
+				including potassium carbonate (K2CO3) and amino acids (such as <br>
+				glycine salts), have also been widely investigated. <br>
+				In recent years, ionic liquids (ILs) have attracted significant <br>
+				attention as alternative absorbents that potentially offer a <br>
+				lower vapor pressure and less thermal degradation compared with amines.<br><br>
+				UTES.io is engaged in researching on implementing and deploying <br>
+				Machine Learning and deep machine learning techniques to efficiently,<br>
+				effectively and optimally control the emission levels through use of advanced<br>
+				databases made available by govrnments globally, evolve unique datasets<br>
+				to train, test and simulate the neural net models at process level.<br>				
+			</h3><br><br>
+			<h3>
+				UTES.io  DATA SCIENCE SERVICE:<br> 
+				IMPLEMENTS COMPREHENSIVE DATA SCIENCE SOLUTIONS FOR BUSINESSES,<br> 
+				UTES.io develops and implements comprehensive data science solutions for <br> 
+				businesses. We run experiments and meet the analytical needs of our <br> 
+				clients by leveraging cutting edge machine learning, deep learning, <br> 
+				and artificial intelligence technologies.<br> 
+			
+			</h3><br> <br> <br> 
+			<div style="margin-left: 12%;">
+			<img border="0" src="python_apps/com.utes.py.ml/public/images/process-neuralnet.jpg" alt="ai-ml"/><br>
+			<label>Figure: A demonstration of ML implementation to predict CO2 solubility in an IL</label>
+		  </div><br><br>
+	  </section>
+	  <section id="smart_ml" name="smart_ml" style="margin-left: 15px;"><br><br><br><br>
+		<h2>Smart carbon capture with machine learning</h2><br>
+			<h3>
+				Machine learning (ML) is emerging as a powerful approach that has recently<br>
+				shown potential to affect various frontiers of carbon capture, a key interim <br>
+				technology to assist in the mitigation of climate change. In this perspective, <br>
+				we reveal how ML implementations have improved this process in many aspects, <br>
+				for both absorption- and adsorption-based approaches, ranging from the <br>
+				molecular to process level. We discuss the role of ML in predicting the <br>
+				thermodynamic properties of absorbents and in improving the absorption process. <br>
+				For adsorption processes, we discuss the promises of ML techniques for <br>
+				exploring many options to find the most cost-effective process scheme, <br>
+				which involves choosing a solid adsorbent and designing a process <br>
+				configuration. We also highlight the advantages of ML and the associated <br>
+				risks, elaborate on the importance of the features needed to train ML models, <br>
+				and identify promising future opportunities for ML in carbon capture processes.<br>
+			</h3><br><br>
+			<div style="margin-left: 12%;">
+			<img border="0" src="python_apps/com.utes.py.ml/public/images/smart_cap.jpg " alt="smart_cap" /> <br>
+			<label>Figure: Schematic of ML implementation at various scales for carbon capture processes</label>
+		  </div><br><br>
+		<h2>Machine learning for carbon capture, utilisation, and storage (CCUS):</h2><br>
+			<h3>
+				Carbon capture, utilisation and storage (CCUS) will play a critical role in <br>
+				future decarbonisation efforts to meet the Paris Agreement targets and <br>
+				mitigate the worst effects of climate change. Whilst there are many <br>
+				well developed CCUS technologies there is the potential for improvement <br>
+				that can encourage CCUS deployment. A time and cost-efficient way of <br>
+				advancing CCUS is through the application of machine learning (ML). <br>
+				ML is a collective term for high-level statistical tools and <br>
+				algorithms that can be used to classify, predict, optimise, <br>
+				and cluster data. Within this review we address the main steps <br>
+				of the CCUS value chain (CO2 capture, transport, utilisation, storage)<br>
+				and explore how ML is playing a leading role in expanding the <br>
+				knowledge across all fields of CCUS. We finish with a set of <br>
+				recommendations for further work and research that will develop <br>
+				the role that ML plays in CCUS and enable greater deployment of the <br>
+				technologies.<br>
+			</h3><br><br>
+		<h2>Machine learning algorithms</h2>
+			<h3>
+				ML is a subset of artificial intelligence (AI) that involves the study<br>
+				of computer algorithms that allow computer programs to automatically <br>
+				improve through experience. Its advantages include ease of <br>
+				trends and pattern identification, minimal human intervention <br>
+				(automation), ability to improve continuously, as well as <br>
+				high efficiency in the handling of multi-dimensional and <br>
+				multi-variety data. Its application is however sometimes <br>
+				limited by factors such as ethics, lack of physical constraint, <br>
+				data availability and quality, misapplication as well as <br>
+				interpretability.<br>
+
+				The dependence of ML modelling on data presents some challenges <br>
+				in terms of availability, quantity as well as quality. Given <br>
+				this dependence, if the sourced data contains human biases and <br>
+				prejudices, then the decision of models developed from such <br>
+				data may inherit such biases, consequently leading to unfair <br>
+				and wrong decisions. Closely associated with the aspect of <br>
+				data is the challenge of dimensionality (the curse of dimensionality). <br>
+				This refers to all the problems that arise when working with <br>
+				data in higher dimensions (large number of data features) that <br>
+				did not exist in lower dimensions. This leads to overfitting <br>
+				resulting in poor performance of the model. In order to avoid <br>
+				this, dimensionality reduction, which is the transformation of <br>
+				high-dimensional data into a meaningful representation of reduced <br>
+				dimensionality is carried out. This data pre-processing improves <br>
+				the performance of the data, reduces training time and computational <br>
+				resources as well as noise removal.35 Dimensionality reduction <br>
+				methods include: Principal Component Analysis (PCA), Factor Analysis, <br>
+				Linear Discriminant Analysis (LDA), Multi-dimensional Scaling (MDS), <br>
+				Isometric Feature Mapping (Isomap), t-distributed Stochastic <br>
+				Neighbour Embedding (t-SNE) and auto-encoders.<br>
+
+				ML model interpretation is another major challenge of deploying ML. <br>
+				This is as a result of the black-box nature of many ML models in <br>
+				which humans are unable to explain the decision-making logic of <br>
+				the ML model despite obtaining high predictive accuracy. This <br>
+				crucial weakness impacts not only on ethics but also on accountability, <br>
+				trust, transparency, safety and industrial liability. To address <br>
+				this limitation and given the importance of openness in scientific <br>
+				research, several approaches have been reported with some even deployed <br>
+				at the cost of sacrificing accuracy. Some of these methods and techniques <br>
+				include; decision tree, feature importance, sensitivity analysis, partial <br>
+				dependence plots, activation maximization, explainable neural network (XNN), <br>
+				local interpretable model-agnostic explanation (LIME), shapley additive <br>
+				exPlanations (SHAP), Deep Learning Important FeaTures (DeepLIFT) <br>
+				explanation method and Treeinterpreter. Key factors to consider <br>
+				in building interpretable ML models have also been reported to include <br>
+				but not be limited to the degree of white-box modelling, data visualisation, <br>
+				usability, model visualisation, variable importance, accuracy, fairness, <br>
+				and sensitivity residuality. In the application of ML to CCUS, it <br>
+				is recommended to aim for the use and development of interpretable models <br>
+				with competitive levels of predictive accuracy.<br>
+
+				Fig. 1 presents the types of ML and respective areas of application. There are <br>
+				three main types of ML: supervised, unsupervised and reinforcement learning. <br>
+				The supervised ML, which is the most commonly used of the three is usually <br>
+				applied when the input–output data is known. It involves training the <br>
+				ML models to learn the relationship between the given inputs and <br>
+				associated output values. If the available dataset consists of <br>
+				only input values (no labels), unsupervised ML can be used in an <br>
+				attempt to identify trends, structure, patterns or clustering in <br>
+				the input data.40 Reinforcement learning is a ML technique that <br>
+				enables an agent to learn in an interactive environment by trial <br>
+				and error using feedback from its actions and experiences. The <br>
+				execution of any of the types of ML can be done through the <br>
+				application of the appropriate algorithm. A brief description <br>
+				of common ML algorithms is presented in figure below.<br><br><br><br>
+			</h3>
+			<div style="margin-left: 12%;">
+			<img border="0" src="python_apps/com.utes.py.ml/public/images/typesofmlapps.gif " alt="smart_ml" /> <br>
+			<label>Figure: Types and applications of ML</label>
+		  </div><br><br>
+	  </section>
+	  <section id="footprint" name="footprint" style="margin-left: 15px;"><br><br><br><br>
+		<h2>Machine learning for carbon capture</h2><br>
+		  <h3>
+				ML tools have been employed to assist in the development of carbon capture  <br>
+				processes on several fronts. In this section, we discuss how ML methods  <br>
+				have been implemented in absorption- and adsorption-based processes,  <br>
+				both at the molecular and the process levels. These implementations  <br>
+				aim to overcome challenges currently facing those processes to  <br>
+				facilitate further developments to achieve effective, large-scale carbon capture.<br><br>
+
+		<h2>Absorption-based carbon capture</h2><br>
+			<h3>
+				Predicting the thermodynamic properties:<br>
+				In the development of absorbent-based carbon capture processes, the <br>
+				thermodynamic properties of the CO2-absorbent system have a decisive role. <br>
+				Among those properties, the CO2-equilibrium solubility is of particular <br>
+				interest and is used to evaluate the performance of absorbents in <br>
+				carbon capture processes. Several thermodynamic models have been <br>
+				established to evaluate CO2 solubility in an absorbent under various <br>
+				operating conditions, ranging from classical thermodynamic methods, <br>
+				based on the vapor-liquid equilibrium (VLE) theory (such as the <br>
+				nonrandom two-liquid [NRTL] model) to molecular dynamics. <br>
+				However, limitations remain regarding the accuracy and range of <br>
+				these prediction models, hindering their subsequent applicability <br>
+				for predicting CO2 solubility in diverse absorbents. As a promising <br>
+				alternative to thermodynamic approaches, ML models have been employed <br>
+				to predict the equilibrium solubility of CO2 in a wide range of absorbents. <br>
+				These algorithms can effectively reflect the complexity of a system <br>
+				and the inherent relationship between the features and the solubility <br>
+				with high confidence and precision. These features include operational <br>
+				temperature and pressure, CO2 partial pressure, and absorbent-related <br>
+				properties, as be discussed below.<br>
+
+				As the most frequently used absorbent in large-scale carbon capture <br>
+				processes, amines have received the most attention. ML models have <br>
+				been developed to predict the CO2 solubility in a wide range of <br>
+				CO2–H2O–amine(s) systems. All types of amines, either individually <br>
+				or in a mixture, including primary and secondary amines35,  <br>
+				(which offer rapid absorption kinetics) and tertiary amines <br>
+				(which offer high absorption capacity), have been investigated. <br>
+				ML models have been constructed and trained based on experimental <br>
+				data for the solubility of CO2 in amines, as available in the literature.<br>
+				The common features employed in these models include temperature, <br>
+				CO2 partial pressure, and amine concentrations. Although <br>
+				the models developed thus far have been quite accurate, the <br>
+				applicability of the models remains questionable. The key features <br>
+				missing from the developed models are those related to the amine <br>
+				tself, such as the amine type and molecular structure. For example, <br>
+				tertiary amines generally have higher capacities compared with primary <br>
+				or secondary amines at the same concentration; however, if the model <br>
+				does not consider the amine type, it cannot accurately predict the <br>
+				solubility. One of the key features of these models is the ability <br>
+				to reveal the relative importance of each parameter. With an amine <br>
+				as the absorbent, the CO2 partial pressure is often reported to <br>
+				have the most-significant effect on equilibrium solubility. <br>
+				In future developments, in which the type of amine and its molecular <br>
+				structure are incorporated into the model as input features, <br>
+				the relative importance of the parameters must be re-evaluated.<br>
+						
+			
+			</h3>
+				</section> <br> <br>
+		</div>
+		<div id="sCyberSecurity" style="display: none;">
+		<!-- The sidebar -->
+		<div class="sidebar">
+		  <a href="#securtiy"><i class="fa fa-fw fa-home"></i> UTES.io</a>
+		  <a href="#cyberapp"><i class="fa fa-fw fa-shield" id="abo"></i> Cyber Security Apps</a>
+		  <a href="#protocols"><i class="fa fa-snowflake-o" aria-hidden="true"></i> Security Protocol Exchange Services</a>
+		  <a href="#utesca"><i class="fa fa-fw fa-user"></i> UTES-CA</a>
+		</div>
+		<br><br><br><br><br><br><br>
+	  <section id="security" name="security"><br><br><br><br>
+		<h2>UTES.io A Cyber Security Provider</h2><br>
+			<h3>
+				At UTES.io (Universal Transformation Expert Services ) we develop <br>
+				applications for web security environments.<br>
+				This includes the basics of PKI and that is X.509 authentications.<br>
+				The most common use of X.509 certificate authentication is in <br>
+				verifying the identity of a server when using SSL/TLS 2.0, most <br>
+				commonly when using HTTPS from a browser. <br>
+				The browser will automatically check that the certificate presented <br>
+				by a server has been issued (ie digitally signed) by one of a list of <br>
+				trusted certificate authorities which it maintains.<br>
+				Using TLS / SSL with “mutual authentication”; <br>
+				the server will then request a valid certificate <br>
+				from the client as part of the SSL handshake. <br>
+				The server will authenticate the client by checking that its <br>
+				certificate is signed by an acceptable authority. If a valid <br>
+				certificate has been provided, it can be obtained through the <br>
+				callbacks in an application. Raksha.io Security <br>
+				X.509 module extracts the certificate using a filter. It maps <br>
+				the certificate to an application user and loads that user's <br>
+				set of granted authorities for use with the standard Security <br>
+				infrastructure.<br>
+			</h3>
+	  </section>
+	  <section id="cyberapp" name="cyberapp"><br><br><br><br>
+		<h2>Cyber Apps & Services </h2><br>
+			<h3>
+				CA and SUBCA engines : that creates master certificates such as :<br>
+				1. Domain Validated (DV)<br>
+				2. Organization Validated (OV)<br>
+				3. Extended Validation (EV)<br>
+				on request from our clients. Clients than use TLS/SSL certificates to <br>
+				establish an encrypted connection between a website/server and a <br>
+				browser with what’s known as an “SSL handshake.” For visitors to <br>
+				client website, the process is invisible—and instantaneous.<br>
+			</h3>.<br>.<br>.<br>
+			<h3>
+
+					OAUTH Regime:.<br>
+					UTES.io provides OAuth endpoints, or open authorization token converter engine.<br>
+					OAuth is about authorization and not authentication.<br>
+					Authentication is proving your identity so that you <br>
+					can gain entry to an application or system. <br>
+					Authorization is asking for and receiving permission to <br>
+					access specific data, features, or areas of that application or <br>
+					system. The "auth" part of "OAuth" stands for authorization, <br>
+					not authentication. It does not pass credentials between<br>
+					users and service providers and instead only authorizes secure <br>
+					access in the form of temporary tokens. OAuth uses access <br>
+					tokens to grant temporary access to third parties. The tokens <br>
+					are typically used short term, but some can grant recurring access.<br>
+					OAuth authorizes access process assumes that a user has <br>
+					already signed in to a website or service, and now the user <br>
+					wants to initiate a transaction that needs access to a <br>
+					thirdparty site or service. 
+			<h3><br><br><br>
+				<h3>
+
+					JWT & JWKS Regime:.<br>
+					UTES.io implements JWKS & JWT token engines with endpoints.<br>
+					JSON Web Token (JWT) access tokens conform to the JWT <br>
+					standard and contain information about an entity in the form of <br>
+					claims. They are self-contained therefore it is not necessary <br>
+					for the recipient to call a server to validate the token.<br>
+					Access tokens issued for the Management API and access tokens <br>
+					issued for any custom API that you have registered with Auth0 follow <br>
+					the JWT standard, which means that their basic structure <br>
+					conforms to the typical JWT structure, and they contain standard JWT <br>
+					claims asserted about the token itself.<br>
+			<h3><br><br><br>
+				<h3>
+
+					UTES.io implements SAML 2.0 assert conversions:<br>
+					The OASIS Security Assertion Markup Language (SAML) standard <br>
+					defines an XMLbased framework for describing and <br>
+					exchanging security information between online business partners. <br>
+					This security information is expressed in the form of portable <br>
+					SAML assertions that applications working across security <br>
+					domain boundaries can trust. The OASIS SAML standard defines <br>
+					precise syntax and rules for requesting, creating, communicating, <br>
+					and using these SAML assertions.<br>
+					The OASIS Security Services Technical Committee (SSTC) develops <br>
+					and maintains the SAML standard. The SSTC has produced this <br>
+					technical overview to assist those wanting to know more about <br>
+					SAML by explaining the business use cases it addresses, the high-level <br>
+					technical components that make up a SAML deployment, details of <br>
+					message exchanges for common use cases, and where to go for <br>
+					additional information.<br>
+					UseCases of SAML: <br>
+					1. Single Sign-On<br>
+					2. Federated identity<br>
+					3. Web services and other industry 	standards<br>
+			<h3><br><br><br>
+				<h3>
+
+					UTES.io implements Security Protocol Conversion Service:<br>
+				<h3>
+					Enterprise security authentication protocol conversion services:<br> 
+					can convert incoming tokens from : <br>
+					X509 - SAML, <br>
+					SAML - X509, <br>
+					SAML - OAUTH, <br>
+					OAUTH - SAML, <br>
+					OAUTH - X509, <br>
+					X509  - OAUTH<br>
+					X509 - ECDSA<br>
+					Internet Security Protocols Exchange Hub:<br>
+					The Protocol Exchange Hub provides a dynamic REST service that delivers<br>
+					transformed protocol on demand as described here:<br>
+					Internet security has achieved great importance, as its vast and encompasses <br>
+					various aspects associated with internet security:<br>
+						Various security mechanisms exist for specialized internet services like <br>
+						email, electronic commerce, and payment, wireless internet, etc.<br> 
+						To provide the security to this internet various protocols have <br>
+						been used like SSL (Secure Socket Layer), TLS ( Transport Layer Security), etc<br> 
+			<h3><br><br><br>
+			
+	  </section>
+	 </div>
+	  <div id="sSolutions" style="display: none;">
+		<!-- The sidebar -->
+		<div class="sidebar">
+		  <a href="#caser"><i class="fa fa-fw fa-home"></i> CA Services</a>
+		  <a href="#oauth"><i class="fa fa-cogs" aria-hidden="true"></i> OAUTH Services</a>
+		  <a href="#saml"><i class="fa fa-cogs" aria-hidden="true"></i> SAML2 Services</a>
+		  <a href="#wts"><i class="fa fa-cogs" aria-hidden="true"></i> Web Token Services</a>
+		  <a href="#ecdsa"><i class="fa fa-cogs" aria-hidden="true"></i> ECDSA Serives</a>
+		</div>
+		<br><br><br><br><br><br><br>
+	  <section id="oauth" name="oauth"><br><br><br><br>
+		<h2>UTES.io</h2><br>
+			<h3>
+				The authorization process <br>
+					follows the steps below:<br>
+					1. The application requests authorization to access a protected <br>
+					service provider.<br>
+					2. The user authorizes the request.<br>
+					3. The application provides proof of user authorization to <br>
+					the service provider in exchange for an access token.<br>
+					4. The user is redirected to the serviceprovider to provide permission.<br>
+					5. Once approved by the user, the application obtains the access token.<br>
+					6. The application requests access to the protected resources <br>
+					from the service provider.<br>
+					The greatest benefit of OAuth for a website, such as a news, <br>
+					community, or e-commerce site, is that authenticated website <br>
+					access can be extended to an unlimited number of additional users <br>
+					without those users creating new accounts requiring an email <br>
+					address and a new password. Open authorization reduces <br>
+					friction for both parties. Websites can scale, and users do not <br>
+					have to create yet another online account.<br>
+					OAuth artifacts:<br>
+					i) Resource Server: The server hosting userowned resources that <br>
+					are protected by OAuth2. The resource server validates the <br>
+					access-token and serves the protected resources.<br>
+					ii) Resource Owner: Typically, the user of the application is <br>
+					the resource owner. The resource owner has the ability to grant or <br>
+					deny access to their own data hosted on the resource server.<br>
+					iii) Authorization Server: The authorization server gets consent <br>
+					from the resource owner and issues access tokens to clients for <br>
+					accessing protected resources hosted by a resource server.<br>
+					iv) Client: An application making API requests to perform actions <br>
+					on protected resources on behalf of the resource owner. Before it may <br>
+					do so, it must be authorized by the resource owner, and the <br>
+					authorization must be validated by resource server/authorization <br>
+					server. OAuth2 defines two client types, based on their ability <br>
+					to authenticate securely with the authorization server <br>
+					(i.e., ability to maintain the confidentiality of their client <br>
+					credentials):<br>
+						a) Confidential: Clients capable of maintaining the confidentiality <br>
+							of their credentials. Confidential clients are implemented on a <br>
+							secure server with restricted access to the client credentials <br>
+							(e.g., a web application running on a web server).<br>
+						b) Public: Clients incapable of maintaining the confidentiality of <br>
+							their credentials (e.g. an installed native application or a <br>
+							web browser-based application), and incapable of secure client <br>
+							authentication via any other means.<br>
+				OAuth access tokens: Access tokens are used in token-based <br>
+				authentication to allow an application to access an API. The application <br>
+				receives an access token after a user successfully authenticates and <br>
+				authorizes access, then passes the access token as a credential when <br>
+				it calls the target API. The passed token informs the API that the <br>
+				bearer of the token has been authorized to access the API and <br>
+				perform specific actions specified by the scope that was granted during <br>
+				authorization.	<br>
+			</h3><br><br><br><br>
+			</h3>
+	  </section>
+	 </div> 
+	 <div id="sSoftware" style="display: none;">
+		<!-- The sidebar -->
+		<div class="sidebar">
+		  <a href="#intro"><i class="fa fa-fw fa-home"></i> Carbon Capture Algorithms</a>
+		  <a href="#smart_ml"><i class="fa fa-fw fa-home"></i> Machine Learning Tools</a>
+		  <a href="#footprint"><i class="fa fa-fw fa-wrench"></i> ML Services</a>
+		  <a href="#clients"><i class="fa fa-fw fa-user"></i> ML Details</a>
+		  <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Blogs</a>
+		</div>
+		<br><br><br><br><br><br><br>
+	  <section id="intro" name="intro"><br><br><br><br>
+		<h2>UTES.io</h2><br>
+			<h3></h3>
+	  </section>
+	 </div> 
+	 <div id="sContact" style="display: none;">
+		<!-- The sidebar -->
+		<div class="sidebar">
+		  <a href="#intro"><i class="fa fa-fw fa-home"></i> Contact</a>
+		  <a href="#smart_ml"><i class="fa fa-fw fa-home"></i> Mail</a>
+		</div>
+		<br><br><br><br><br><br><br>
+	  <section id="intro" name="intro"><br><br><br><br>
+		<h2>UTES.io</h2><br>
+			<h3></h3>
+	  </section>
+	 </div> 
+	 <div id="sLogin" style="display: none;">
+		<!-- The sidebar -->
+		<div class="sidebar">
+		  <a href="#intro"><i class="fa fa-fw fa-home"></i> Login</a>
+		  <a href="#smart_ml"><i class="fa fa-fw fa-home"></i> Register</a>
+		</div>
+		<br><br><br><br><br><br><br>
+	  <section id="intro" name="intro"><br><br><br><br>
+		<h2>UTES.io6</h2><br>
+			<h3></h3>
+	  </section>
+	 </div> 
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+			// Store hash
+			var hash = this.hash;
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+			scrollTop: $(hash).offset().top
+			}, 800, function(){
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+			});
+		} // End if
+	  });
+	});
+		//var divs = ["shome", "sabout", "sSolutions", "sSoftware", "sContact"];
+	</script>
+</body>
+
+</html>
+
